@@ -8,10 +8,8 @@ class Recaptcha {
 	public static function _init()
 	{
 		Config::load("recaptcha");
-		$public 	= Config::get("public_key");
-		$private 	= Config::get("private_key");
-		self::$_public_key 		= $public;
-		self::$_private_key 	= $private;
+		self::$_public_key 	= Config::get("public_key");
+		self::$_private_key 	= Config::get("private_key");
 	}
 
 	public static function mailhide_html($email)
