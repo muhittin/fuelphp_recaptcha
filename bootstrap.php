@@ -8,11 +8,11 @@
  * @link       http://www.muhittinozer.com
  */
 
-require PKGPATH.'recaptcha'.DS.'recaptchalib.php';
+require PKGPATH.'recaptcha'.DS.'classes'.DS.'recaptchalib.php';
 
 
 Autoloader::add_classes(array(
-	'Recaptcha' => __DIR__.DS.'captcha.php'
+	'Recaptcha' => __DIR__.DS.'classes'.DS.'captcha.php'
 ));
 
 /*
